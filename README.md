@@ -6,11 +6,11 @@ Welcome to my **Currency Converter API** — a fun little hobby project that tra
 
 This is a Node.js/Express.js backend service that:
 
-- **Authenticates Users:** Register & login with JWT-based authentication.  
-- **Manages Profiles:** Update your profile info, because who doesn’t love personalization?  
-- **Converts Currencies:** Takes in an amount, a "from" currency, and a "to" currency, and voilà—converts it using real-time exchange rates from the [Frankfurter API](https://www.frankfurter.app/)!  
-- **Provides Historical Rates:** Fetches historical exchange data over a given time period. Perfect for those who love to marvel at the changing tides of finance.  
-- **Saves Favorites:** Mark your go-to currency pairs as favorites to avoid typing them again.  
+- **Authenticates Users:** Register & login with JWT-based authentication.
+- **Manages Profiles:** Update your profile info, because who doesn’t love personalization?
+- **Converts Currencies:** Takes in an amount, a "from" currency, and a "to" currency, and voilà—converts it using real-time exchange rates from the [Frankfurter API](https://www.frankfurter.app/)!
+- **Provides Historical Rates:** Fetches historical exchange data over a given time period. Perfect for those who love to marvel at the changing tides of finance.
+- **Saves Favorites:** Mark your go-to currency pairs as favorites to avoid typing them again.
 - **Sets Notifications:** Set up "rate alerts" and get notified when a currency hits your desired threshold.
 
 ## Why I Built This
@@ -30,12 +30,14 @@ This is a Node.js/Express.js backend service that:
 
 ## Endpoints Overview
 
-- **Auth:** `/auth/register` and `/auth/login`  
-- **Profile:** `/profile` (get & update)  
-- **Currency:**  
-  - `/currency/convert?from=USD&to=EUR&amount=100`  
+- **Auth:** `/auth/register` and `/auth/login`
+- **Profile:** `/profile` (get & update)
+- **Currency:**
+  - `/currency/convert?from=USD&to=EUR&amount=100`
   - `/currency/historical?base=USD&symbols=EUR&start_date=2020-01-01&end_date=2020-01-05`
-- **Favorites:** `/favorites` (POST and GET)  
+- **Favorites:** `/favorites` (POST and GET)
 - **Notifications:** `/notifications` (POST and GET)
 
+## DOCUMENTATION
 
+https://documenter.getpostman.com/view/22114110/2sAYJ3E1UD
